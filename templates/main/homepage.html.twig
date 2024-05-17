@@ -1,5 +1,7 @@
 {%extends 'base.html.twig' %}
 {% block body %}
 <h1>Homepage</h1>
-<p>This is the homepage</p>
+<p class="text-sky-200">This is the homepage</p>
+<button hx-get="/htmx/swap" hx-swap="innerHTML" hx-target="#swap-div">Click me</button>
+<div id="swap-div"></div>
 {% endblock %}
